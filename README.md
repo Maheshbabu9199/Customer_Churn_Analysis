@@ -11,7 +11,7 @@
 - [Contact](#contact)
 
 ## Introduction
-Customer Churn Prediction project aims to predict whether a customer will churn or not using machine learning techniques. This project utilizes the RandomForest classification algorithm and is built with Python 3.10. The web interface for this project is developed using the Streamlit framework, making it easy to interact with the model and visualize results.
+Customer churn prediction is an essential aspect of customer relationship management, helping businesses identify customers who are likely to leave. By using machine learning algorithms, specifically the RandomForest classifier, this project aims to predict customer churn with high accuracy. The project is implemented in Python 3.10 and utilizes the Streamlit framework to create an interactive web application for users to easily input data and view predictions. The modular code structure ensures the project is maintainable and scalable..
 
 ## Features
 - Predict customer churn using a trained RandomForest model.
