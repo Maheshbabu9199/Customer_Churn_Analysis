@@ -24,7 +24,7 @@ Follow these steps to set up and run the project locally.
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-username/customer-churn-prediction.git
+   git clone https://github.com/Maheshbabu9199/Customer_Churn_Prediction.git
    ```
 
 2. **Navigate to the project directory:**
@@ -71,9 +71,9 @@ customer-churn-prediction/
 ├── data/
 │   └── dataset
 ├── src/
-│   ├── components/
-│   ├── utils/
-│   ├── entity_config/
+│   └── components/
+│   └── utils/
+│   └── entity_config/
 │   └── config/
 │   └── pipelines/
 ├── app.py
