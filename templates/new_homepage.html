@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Customer Churn Analysis</title>
+    <style>
+        #body_part{
+            background-image: url('../static/pexels-pavel-danilyuk-7869059.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 800px;
+            filter: brightness(40%);    
+        }
+
+        #content_part{
+            position: absolute;
+            top: 200px;
+            left: 600px;
+            color: white;
+        }
+
+    </style>
+    
+    </head><div>
+    <h2 style="position: absolute; top:40px; left: 420px; font-size: x-large;"> Customer Churn Analysis - Research Project - Master of Computer Application</h2>
+        <img src="../static/image.png" alt="Flowers in Chania" width="350" height="125">
+
+        
+    </div>
+
+</head>
+<body>
+    {% block content %}
+    <div id="body_part">
+
+    </div>
+
+    <div id="content_part">
+        
+        <form action="{{ url_for('homepage') }}" method="POST" id="form" >
+            <h2 style="color:rgb(255, 255, 255);">Customer churn analysis using Machine Learning</h2> <br><br>
+            
+            <label for="tenure"> tenure </label> &nbsp
+            <input type="number" id="tenure" name="tenure" placeholder="tenure"> 
+
+
+            <label for="cc_contacted_ly" > cc_contacted_ly  </label> &nbsp
+            <input type="number" id="cc_contacted_ly" name="cc_contacted_ly" placeholder='cc_contacted_ly'> 
+
+            <label for="rev_growth_yoy"> rev_growth_yoy </label> &nbsp
+            <input type="number" id="rev_growth_yoy" name="rev_growth_yoy" placeholder="rev_growth_yoy"> <br><br>
+            
+            <label for="rev_per_month"> rev_per_month </label> &nbsp
+            <input type="number" id="rev_per_month" name="rev_per_month" placeholder="rev_per_month">
+            
+            <label for="cc_agent_score"> cc_agent_score </label> &nbsp
+            <input type="text" id="cc_agent_score" name="cc_agent_score" placeholder="cc_agent_score"> <br> <br>
+            
+            <label for="no_of_user"> no_of_user </label> &nbsp
+            <input type="number" id="no_of_user" name="no_of_user" placeholder="no_of_user">
+
+            <label for="city">city </label> &nbsp 
+            <select name="city" id="city" style="width: 100px;">
+                <option value = 'select option'>select option</option>
+                <option value="1">Tier 1</option>
+                <option value="2">Tier 2</option>
+                <option value="3">Tier 3</option>
+            </select>
+    
+            <!-- submit button--><br><br>
+            <input type="submit" value="Submit" style="color:rgb(255, 255, 255); width:85px;color:black; height:30px">
+        
+        </form >
+
+        <div id="result" style="position:absolute; left: 5px; top:300px; color:rgb(255, 255, 255)">
+            {% if result %}
+                <h2> The customer will {{result}}</h2>
+            {% else %}
+                <h2> </h2>
+            {% endif %}
+        </div>
+
+        </div>
+        {% endblock %}
+    </div>
+</body>
+
+</html>

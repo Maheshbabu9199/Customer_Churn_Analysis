@@ -1,0 +1,13 @@
+data_ingestion:
+  data_source_path: data/Customer Churn Data.xlsx
+
+data_preparation:
+  data_path: artifacts/raw_data.csv
+
+model_training:
+  cleaned_data_path: artifacts/prepared_data.csv
+  split_ratio: 0.4
+
+model_prediction:
+  model_path: artifacts/model.pkl
+  test_data_path: artifacts/test_data.csv
